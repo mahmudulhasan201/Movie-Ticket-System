@@ -1,10 +1,6 @@
 <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-sm-6 text-center">
-                        <h2>We accept</h2>
-                        <img src="https://blockbusterbd.com/assets/web/img/credit-cards-logos-200px-high-WEB.png" style="max-height: 60px; max-width: 300px;">
-                    </div>
 
                     <div class="col-md-9 col-sm-6">
                         <h1>Contacts</h1>

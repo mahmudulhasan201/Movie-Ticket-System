@@ -18,8 +18,6 @@
             <span>Dashboard</span></a>
     </li>
 
-    <hr class="sidebar-divider">
-
     <li class="nav-item active">
         <a class="nav-link" href="{{route('category')}}">
             <i class="fas fa-fw fa-tachometer-alt"></i>

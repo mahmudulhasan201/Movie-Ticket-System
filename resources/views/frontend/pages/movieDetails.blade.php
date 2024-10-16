@@ -14,34 +14,23 @@
                     </div>
                     <h4 style="margin-bottom:0;" class="uppercase_style text_align_style_center">DIRECTOR</h4>
                     <p style="margin-bottom:0; font-size:15px;" class="text_align_style_center">
-                        Colm McCarthy
+                    {{$movies->director}} 
                     </p>
                     <h4 style="margin-bottom:0;" class="uppercase_style text_align_style_center">CAST</h4>
                     <p style="margin-bottom:0; font-size:15px;" class="text_align_style_center">
-                        Sam Claflin, Antonia Thomas, Steven Cree
+                    {{$movies->cast}} 
                     </p>
                     <h4 style="margin-bottom:0;" class="uppercase_style text_align_style_center">RUNTIME</h4>
                     <p style="margin-bottom:0; font-size:15px;" class="text_align_style_center">
-                        2 h Minute's
+                    {{$movies->run_time}} 
                     </p>
                     <h4 style="margin-bottom:0;" class="uppercase_style text_align_style_center">RELEASE DATE</h4>
                     <p style="margin-bottom:0; font-size:15px;" class="text_align_style_center">
-                        2025-09-01
-                    </p>
-                    <h4 style="margin-bottom:0;" class="uppercase_style text_align_style_center">RATING</h4>
-                    <p style="margin-bottom:0; font-size:15px;" class="text_align_style_center">
-
-                    </p>
-                    <h4 style="margin-bottom:0;" class="uppercase_style text_align_style_center">GENRE</h4>
-                    <p style="font-size:15px;" class="text_align_style_center">
-
+                    {{$movies->release_date}} 
                     </p>
                 </div>
                 <div class="col-md-7 col-sm-7">
                     <br /><br />
-
-
-
                     <!-- End of Amazing Slider Code -->
                     <div class="row" style="border-top:1px solid #f2f2f2; margin-top:0px; padding-left:10px;">
                         <h4>Description</h4>
@@ -78,31 +67,6 @@
             </div>
         </div>
         <!-- End container -->
-    </div>
-
-
-
-
-
-    <div class="row align-items-center" id="single_room_feat">
-        <div class="single-room-title col-md-3" style="background:#0f75bc; padding:0;">
-            <h3 style=" color:#FFF;font-family: 'Gochi Hand', cursive;
-                  line-height: 1.42857143; font-size:30px;padding: 0 15px;text-align: center;">Our Partners</h3>
-        </div>
-
-
-
-        <div class="col-md-9">
-
-            <div class="">
-                <div class="owl-carousel owl-theme client-logo " id="client-logo">
-                    <div class="item ">
-                        <a href="#" title="nagad logo"><img src="https://blockbusterbd.com/uploads/partners/7979190581685794665.jpg" class="img-responsive" alt="client-logo"></a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
     </div>
 
 

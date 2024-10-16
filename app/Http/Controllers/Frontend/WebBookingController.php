@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Frontend;
 
+use App\Http\Controllers\Controller;
 use App\Models\Booking;
 use App\Models\Movie;
 use Illuminate\Http\Request;
 
-class BookingController extends Controller
+class WebBookingController extends Controller
 {
     public function bookingForm($id)
     {
@@ -16,13 +17,14 @@ class BookingController extends Controller
 
     public function bookingStore(Request $request)
     {
-        //dd($request->all());
+        // dd($request->all());
         Booking::create([
             'movie_id' =>$request->movie_id,
             'name' =>$request->name,
             'mobile' =>$request->mobile,
             'date' =>$request->date,
             'show_time' =>$request->show_time,
+            'price' =>$request->price,
             'ticket' =>$request->ticket,
         ]);
 

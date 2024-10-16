@@ -15,13 +15,6 @@
     <meta name="author" content="Electro CRAFT Corporation Ltd">
     <meta name="csrf-token" content="W3t4i4RLXi8pMhvEdxrJjSAp0U6B0tTbPKUqKJiK" />
     <title></title>
-    <!-- Favicons-->
-    <!-- <link rel="shortcut icon" href="https://blockbusterbd.com/assets/web/img/favic" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="https://blockbusterbd.comh-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="https://blockbusterbd.compple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="https://blockbusterb4-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="https://blockbustapple-touch-icon-144x144-precomposed.png"> -->
-    <!-- Google web fonts -->
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
@@ -45,14 +38,6 @@
     <script type="text/javascript">
         var startDate = "05-10-2024";
     </script>
-
-
-    <!--[if lt IE 9]>
-      <script src="https://blockbusterbd.com/assets/web/html5shiv.min.js"></script>
-      <script src="https://blockbusterbd.com/assets/web/respond.min.js"></script>
-   <![endif]-->
-
-
 
     <!-- start slider-->
     <link rel="stylesheet" type="text/css" href="https://blockbusterbd.com/assets/web/slider_blockbuster/css/style.css">
@@ -105,18 +90,6 @@
     <div class="loaderwhole">
         <div class="centerload"></div>
     </div>
-    <!--[if lte IE 8]>
-      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
-   <![endif]-->
-    <!--<div id="preloader">
-         <div class="sk-spinner sk-spinner-wave">
-             <div class="sk-rect1"></div>
-             <div class="sk-rect2"></div>
-             <div class="sk-rect3"></div>
-             <div class="sk-rect4"></div>
-             <div class="sk-rect5"></div>
-         </div>
-      </div>-->
     <!-- End Preload -->
     <div class="layer"></div>
     <!-- Mobile menu overlay mask -->

@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Backend;
 
+use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Movie;
 use Illuminate\Http\Request;
@@ -13,13 +14,13 @@ class MovieController extends Controller
   public function movie()
   {
     $allMovie = Movie::with('category')->get();
-    return view('backend.movie.movie', compact('allMovie'));
+    return view('backend.pages.movie.movie', compact('allMovie'));
   }
 
   public function movie_form()
   {
     $categories = Category::all();
-    return view('backend.movie.movie_form', compact('categories'));
+    return view('backend.pages.movie.movie_form', compact('categories'));
   }
 
   public function storeMovie_form(Request $request)
@@ -29,7 +30,12 @@ class MovieController extends Controller
       [
         'movie_name' => 'required',
         'category_id' => 'required',
-        // 'image' => 'required',
+        'director' => 'required',
+        'cast' => 'required',
+        'run_time' => 'required',
+        'release_date' => 'required',
+        'price' => 'required',
+        'image' => 'required',
         'description' => 'required',
       ]
     );
@@ -49,6 +55,11 @@ class MovieController extends Controller
     Movie::create([
       'movie_name' => $request->movie_name,
       'category_id' => $request->category_id,
+      'director' => $request->director,
+      'cast' => $request->cast,
+      'run_time' => $request->run_time,
+      'release_date' => $request->release_date,
+      'price' => $request->price,
       'image' => $movie_image,
       'description' => $request->description
     ]);
@@ -62,7 +73,7 @@ class MovieController extends Controller
 
     $categories = Category::all();
     $movies = Movie::find($id);
-    return view('backend.movie.editMovie', compact('categories','movies'));
+    return view('backend.pages.movie.editMovie', compact('categories','movies'));
   }
 
   //update
@@ -82,7 +93,12 @@ class MovieController extends Controller
       [
         'movie_name' => 'required',
         'category_id' => 'required',
-        // 'image' => 'required',
+        'director' => 'required',
+        'cast' => 'required',
+        'run_time' => 'required',
+        'release_date' => 'required',
+        'price' => 'required',
+        //'image' => 'required',
         'description' => 'required',
       ]
     );
@@ -97,6 +113,11 @@ class MovieController extends Controller
     $movies->update([
       'movie_name' => $request->movie_name,
       'category_id' => $request->category_id,
+      'director' => $request->director,
+      'cast' => $request->cast,
+      'run_time' => $request->run_time,
+      'release_date' => $request->release_date,
+      'price' => $request->price,
       'image' => $movie_image,
       'description' => $request->description
     ]);

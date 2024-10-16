@@ -8,6 +8,11 @@
       <th scope="col">Id</th>
       <th scope="col">Movie Name</th>
       <th scope="col">Category</th>
+      <th scope="col">Director</th>
+      <th scope="col">Cast</th>
+      <th scope="col">Run Time</th>
+      <th scope="col">Release Date</th>
+      <th scope="col">Price</th>
       <th scope="col">Image</th>
       <th scope="col">Description</th>
       <th scope="col">Action</th>
@@ -21,6 +26,11 @@
       <th scope="row">{{$data->id}}</th>
       <td>{{$data->movie_name}}</td>
       <td>{{$data->category->name}}</td>
+      <td>{{$data->director}}</td>
+      <td>{{$data->cast}}</td>
+      <td>{{$data->run_time}}</td>
+      <td>{{$data->release_date}}</td>
+      <td>{{$data->price}}</td>
       <td><img style="width: 100px; height: 100px;" src="{{url('images/movies', $data->image)}}" alt=""></td>
       <td>{{$data->description}}</td>
       <td>

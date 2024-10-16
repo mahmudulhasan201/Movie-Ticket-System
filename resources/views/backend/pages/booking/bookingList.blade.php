@@ -11,6 +11,7 @@
       <th scope="col">Mobile</th>
       <th scope="col">Date</th>
       <th scope="col">Show Time</th>
+      <th scope="col">Price</th>
       <th scope="col">Ticket</th>
       
 
@@ -26,6 +27,7 @@
        <td>{{$data->mobile}}</td>
        <td>{{$data->date}}</td>
        <td>{{$data->show_time}}</td>
+       <td>{{$data->price}}</td>
        <td>{{$data->ticket}}</td>
        
      </tr>

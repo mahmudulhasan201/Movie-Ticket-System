@@ -15,6 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('movie_name');
             $table->foreignId('category_id')->constrained('categories')->restrictOnDelete();
+            $table->string('director')->nullable();
+            $table->string('cast')->nullable();
+            $table->string('run_time')->nullable();
+            $table->string('release_date')->nullable();
+            $table->string('price')->nullable();
             $table->string('image')->nullable();
             $table->string('description');
             $table->timestamps();

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Backend;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Models\Category;
-use App\Models\Movie;
 
 class CategoryController extends Controller
 {
@@ -14,13 +14,13 @@ class CategoryController extends Controller
 
     $allCategory=Category::paginate(5);
        
-    return view('backend.category',compact('allCategory'));   
+    return view('backend.pages.category.category',compact('allCategory'));   
 }
 
 public function category_form()
 {
  
- return view('backend.category_form');
+ return view('backend.pages.category.category_form');
 
 }
 
@@ -30,7 +30,7 @@ public function store(Request $request)
 
         $validation=Validator::make($request->all(),
         [
-            'cat_name'=>'required|min:2',
+            'cat_name'=>'required',
         ]);
         
       if($validation->fails())
@@ -48,8 +48,6 @@ public function store(Request $request)
             //bam pase table er column name => dan pase input field er name
             'id'=>$request->id,
             'name'=>$request->cat_name,
-            'description'=>$request->cat_description,
-            'status'=>$request->status
         ]);
 
         return redirect()->route('category');    
@@ -60,7 +58,7 @@ public function store(Request $request)
   {
 
     $categories = Category::find($id);
-    return view('backend.editCategory', compact('categories'));
+    return view('backend.pages.category.editCategory', compact('categories'));
   }
 
   //update
@@ -70,7 +68,7 @@ public function store(Request $request)
 
     $validation=Validator::make($request->all(),
     [
-        'cat_name'=>'required|min:2',
+        'cat_name'=>'required',
     ]);
 
 
@@ -83,8 +81,6 @@ public function store(Request $request)
     $categories-> update([
       'id'=>$request->id,
       'name'=>$request->cat_name,
-      'description'=>$request->cat_description,
-      'status'=>$request->status
     ]);
     return redirect()->route('category');
   }
